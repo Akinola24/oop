@@ -1,0 +1,18 @@
+Python 3.2.5 (default, May 15 2013, 23:06:03) [MSC v.1500 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> # Define the Person class
+class Person:
+    def __init__(self, name, age, gender):
+        self.name = name  # Person's name
+        self.age = age    # Person's age
+        self.gender = gender  # Person's gender
+    
+    # Method to introduce the person
+    def introduce(self):
+        print(f"Hello! My name is {self.name}. I am {self.age} years old and I am {self.gender}.")
+
+# Create an instance of the Person class
+person1 = Person("John Doe", 23, "male")
+
+# Call the introduce method to display person's information
+person1.introduce()
